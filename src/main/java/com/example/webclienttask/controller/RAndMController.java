@@ -22,4 +22,9 @@ public class RAndMController {
 
     }
 
+    @GetMapping("aliveCharacters")
+    public List<RAndMCharacter> aliveCharacters(){
+        return rickAndMortyApiService.getLivingCharacters();
+    }
+
 }
