@@ -14,7 +14,7 @@ public class RAndMApiService {
     public List<RAndMCharacter> getAllCharacters() {
         RAndMApiResponse rAndMApiResponse = Objects.requireNonNull(webClient
                         .get()
-                        .uri("character")
+                        .uri("/character")
                         .retrieve()
                         .toEntity(RAndMApiResponse.class)
                         .block())
